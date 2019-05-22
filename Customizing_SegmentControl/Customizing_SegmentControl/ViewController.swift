@@ -57,10 +57,15 @@ class ViewController: UIViewController {
         
         segmenteControl.setBackgroundImage(normalImage, for: .normal, barMetrics: .default)
         segmenteControl.setBackgroundImage(selectedImage, for: .selected, barMetrics: .default)
+        segmenteControl.setBackgroundImage(normalImage, for: .highlighted, barMetrics: .default)
         
         segmenteControl.setDividerImage(#imageLiteral(resourceName: "segment_normal_normal"), forLeftSegmentState: .normal, rightSegmentState: .normal, barMetrics: .default)
         segmenteControl.setDividerImage(#imageLiteral(resourceName: "segment_normal_selected"), forLeftSegmentState: .normal, rightSegmentState: .selected, barMetrics: .default)
         segmenteControl.setDividerImage(#imageLiteral(resourceName: "segment_selected_normal"), forLeftSegmentState: .selected, rightSegmentState: .normal, barMetrics: .default)
+        
+        segmenteControl.setDividerImage(#imageLiteral(resourceName: "segment_normal_selected"), forLeftSegmentState: .highlighted, rightSegmentState: .selected, barMetrics: .default)
+        segmenteControl.setDividerImage(#imageLiteral(resourceName: "segment_selected_normal"), forLeftSegmentState: .highlighted, rightSegmentState: .selected, barMetrics: .default)
+        
         
         let width = ((#imageLiteral(resourceName: "segment_normal_normal")).size.width - 20) / 3.0
         var offset = UIOffset(horizontal: width, vertical: 0)
