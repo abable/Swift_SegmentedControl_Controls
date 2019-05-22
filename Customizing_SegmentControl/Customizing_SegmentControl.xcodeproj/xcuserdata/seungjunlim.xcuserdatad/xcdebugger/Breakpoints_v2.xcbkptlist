@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Customizing_SegmentControl/AppDelegate.swift"
+            timestampString = "580212279.9252239"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "AppDelegate"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Customizing_SegmentControl.AppDelegate.__allocating_init() -&gt; Customizing_SegmentControl.AppDelegate"
+                  moduleName = "Customizing_SegmentControl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/seungjunlim/Documents/project/Swift_Study/Controls/Segmented_Control/Customizing_SegmentControl/Customizing_SegmentControl/AppDelegate.swift"
+                  timestampString = "580212280.015372"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Customizing_SegmentControl.AppDelegate.init() -&gt; Customizing_SegmentControl.AppDelegate"
+                  moduleName = "Customizing_SegmentControl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/seungjunlim/Documents/project/Swift_Study/Controls/Segmented_Control/Customizing_SegmentControl/Customizing_SegmentControl/AppDelegate.swift"
+                  timestampString = "580212280.02018"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Customizing_SegmentControl.AppDelegate.__deallocating_deinit"
+                  moduleName = "Customizing_SegmentControl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/seungjunlim/Documents/project/Swift_Study/Controls/Segmented_Control/Customizing_SegmentControl/Customizing_SegmentControl/AppDelegate.swift"
+                  timestampString = "580212280.02372"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Customizing_SegmentControl"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/seungjunlim/Documents/project/Swift_Study/Controls/Segmented_Control/Customizing_SegmentControl/Customizing_SegmentControl/AppDelegate.swift"
+                  timestampString = "580212280.0259269"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

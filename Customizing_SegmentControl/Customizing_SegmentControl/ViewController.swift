@@ -61,6 +61,13 @@ class ViewController: UIViewController {
         segmenteControl.setDividerImage(#imageLiteral(resourceName: "segment_normal_normal"), forLeftSegmentState: .normal, rightSegmentState: .normal, barMetrics: .default)
         segmenteControl.setDividerImage(#imageLiteral(resourceName: "segment_normal_selected"), forLeftSegmentState: .normal, rightSegmentState: .selected, barMetrics: .default)
         segmenteControl.setDividerImage(#imageLiteral(resourceName: "segment_selected_normal"), forLeftSegmentState: .selected, rightSegmentState: .normal, barMetrics: .default)
+        
+        let width = ((#imageLiteral(resourceName: "segment_normal_normal")).size.width - 20) / 3.0
+        var offset = UIOffset(horizontal: width, vertical: 0)
+        segmenteControl.setContentPositionAdjustment(offset, forSegmentType: .left, barMetrics: .default)
+        
+        offset = UIOffset(horizontal: -width, vertical: 0)
+        segmenteControl.setContentPositionAdjustment(offset, forSegmentType: .right, barMetrics: .default)
     }
 
 
