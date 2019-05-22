@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="277-Ex-wAz">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Customizing-->
+        <scene sceneID="9u2-l3-BMW">
+            <objects>
+                <viewController title="Customizing" id="277-Ex-wAz" customClass="ViewController" customModule="Customizing_SegmentControl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="geY-rK-5ry">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="naj-xS-Vk3">
+                                <rect key="frame" x="16" y="78" width="382" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n6Z-dj-GlJ">
+                                <rect key="frame" x="16" y="167" width="382" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ak8-vy-GIe">
+                                <rect key="frame" x="16" y="215" width="382" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WQ-v0-KxV">
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="40"/>
+                                        <state key="normal" title="Remove"/>
+                                        <connections>
+                                            <action selector="removeSegment:" destination="277-Ex-wAz" eventType="touchUpInside" id="7zw-N3-4B4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZz-WC-cv5">
+                                        <rect key="frame" x="201" y="0.0" width="181" height="40"/>
+                                        <state key="normal" title="Insert"/>
+                                        <connections>
+                                            <action selector="insertSegment:" destination="277-Ex-wAz" eventType="touchUpInside" id="83r-ut-HGq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="auv-78-rcO"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ak8-vy-GIe" firstAttribute="leading" secondItem="hiG-Xt-xbx" secondAttribute="leading" constant="16" id="96v-7Q-oIJ"/>
+                            <constraint firstItem="hiG-Xt-xbx" firstAttribute="trailing" secondItem="naj-xS-Vk3" secondAttribute="trailing" constant="16" id="FHA-tV-96W"/>
+                            <constraint firstItem="Ak8-vy-GIe" firstAttribute="top" secondItem="n6Z-dj-GlJ" secondAttribute="bottom" constant="18" id="GlN-7O-zDP"/>
+                            <constraint firstItem="naj-xS-Vk3" firstAttribute="top" secondItem="hiG-Xt-xbx" secondAttribute="top" constant="34" id="Ltb-g5-GnT"/>
+                            <constraint firstItem="hiG-Xt-xbx" firstAttribute="trailing" secondItem="Ak8-vy-GIe" secondAttribute="trailing" constant="16" id="Woi-F3-bef"/>
+                            <constraint firstItem="hiG-Xt-xbx" firstAttribute="trailing" secondItem="n6Z-dj-GlJ" secondAttribute="trailing" constant="16" id="Wtv-M3-7dM"/>
+                            <constraint firstItem="n6Z-dj-GlJ" firstAttribute="leading" secondItem="hiG-Xt-xbx" secondAttribute="leading" constant="16" id="dXW-Hb-sWK"/>
+                            <constraint firstItem="naj-xS-Vk3" firstAttribute="leading" secondItem="hiG-Xt-xbx" secondAttribute="leading" constant="16" id="hH5-0x-nlx"/>
+                            <constraint firstItem="n6Z-dj-GlJ" firstAttribute="top" secondItem="naj-xS-Vk3" secondAttribute="bottom" constant="61" id="wJf-gQ-G20"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hiG-Xt-xbx"/>
+                    </view>
+                    <connections>
+                        <outlet property="segmenteControl" destination="naj-xS-Vk3" id="akh-CH-f2n"/>
+                        <outlet property="segmentedControl" destination="naj-xS-Vk3" id="9Ul-Ep-ZRA"/>
+                        <outlet property="titleField" destination="n6Z-dj-GlJ" id="UbN-5Q-NTL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KX5-ua-egd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="443" y="876"/>
+        </scene>
+    </scenes>
+</document>
